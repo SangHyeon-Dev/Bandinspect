@@ -1,0 +1,10 @@
+name: Bandinspect
+author: Leader
+main: Leader\Bandinspect\Main
+version: 1.0.0
+api:
+- 3.0.0
+
+commands:
+  점검:
+    description: (!) 점검 관련 명령어 - By Leader
