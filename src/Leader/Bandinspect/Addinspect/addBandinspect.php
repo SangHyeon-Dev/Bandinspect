@@ -24,7 +24,7 @@ class addBandinspect implements Form {
     }
 
     public function handleResponse(Player $player, $data): void {
-        $time = date("Y년 m월 d일 h시");
+        $time = date("Y년 m월 d일 h시 i분");
         if($data == 0) {
             $player->sendForm(new addBandvalue());
         }
