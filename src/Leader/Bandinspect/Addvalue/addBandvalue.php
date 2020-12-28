@@ -31,7 +31,7 @@ class addBandvalue implements Form {
     }
 
     public function handleResponse(Player $player, $data): void {
-            $time = date("Y년 m월 d일 h시");
+            $time = date("Y년 m월 d일 h시 i분");
             if($data === null) return;
             BandReporter::addPost("[ 점검 시스템 ] #점검\n\n점검이 시작되었습니다.\n\n점검 사유 : {$data[0]}\n\n점검 시간 : {$time} ~ {$data[1]}");
             Server::getInstance()->getCommandMap()->dispatch($player,"whitelist on");
